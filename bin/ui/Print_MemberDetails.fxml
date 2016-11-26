@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.PrintMemberCheckOutDetails">
+   <children>
+      <TextField fx:id="MemberID" layoutX="211.0" layoutY="146.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="129.0" layoutY="149.0" text="Member ID :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="412.0" layoutY="146.0" mnemonicParsing="false" onAction="#printMemberDetails" prefHeight="25.0" prefWidth="60.0" text="Print" />
+      <Text layoutX="131.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRINTING MEMBER DETAILS:">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="textArea" layoutX="131.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+   <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+</AnchorPane>

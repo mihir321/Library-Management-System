@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.MainScreenAdminLibrarianMapper">
+   <children>
+      <MenuBar fx:id="menuBar">
+        <menus>
+          <Menu fx:id="librarianMenu" mnemonicParsing="false" text="Librarian">
+            <items>
+              <MenuItem fx:id="checkOut" mnemonicParsing="false" onAction="#librarianCheckOut" text="Checkout" />
+            </items>
+          </Menu>
+          <Menu fx:id="adminMenu" mnemonicParsing="false" text="Adminstration">
+            <items>
+              <MenuItem fx:id="addMember" mnemonicParsing="false" onAction="#addMemeber" text="Addmember" />
+                  <MenuItem fx:id="addCopy" mnemonicParsing="false" onAction="#addCopyOfbook" text="AddCopy" />
+                  <MenuItem fx:id="addBook" mnemonicParsing="false" onAction="#addBook" text="AddBook" />
+                  <MenuItem fx:id="overDue" mnemonicParsing="false" onAction="#checkOverDue" text="CheckOverDue" />
+                  <MenuItem fx:id="print" mnemonicParsing="false" onAction="#PrintMember" text="Print" />
+                  
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutX="85.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Library Management System">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+   </children>
+   <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+</AnchorPane>

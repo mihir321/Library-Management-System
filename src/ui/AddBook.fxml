@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.AddBook">
+   <children>
+      <Label layoutX="200.0" layoutY="24.0" text="Add Book">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="91.0" text="ISBN:" />
+      <Label layoutX="63.0" layoutY="139.0" text="Titile:" />
+      <Label layoutX="63.0" layoutY="187.0" text="Authors:" />
+      <Label layoutX="63.0" layoutY="235.0" text="Max checkout length:" />
+      <Label layoutX="63.0" layoutY="285.0" text="Number of copies:" />
+      <TextField fx:id="isbn" layoutX="183.0" layoutY="88.0" prefHeight="25.0" prefWidth="264.0" promptText="enter ISBN number" />
+      <TextField fx:id="title" layoutX="183.0" layoutY="136.0" prefHeight="25.0" prefWidth="264.0" promptText="enter title" />
+      <TextField fx:id="authors" layoutX="183.0" layoutY="184.0" prefHeight="25.0" prefWidth="264.0" promptText="enter authors name" />
+      <TextField fx:id="maxCheckoutLength" layoutX="183.0" layoutY="232.0" prefHeight="25.0" prefWidth="264.0" promptText="enter max checkout length" />
+      <TextField fx:id="copies" layoutX="183.0" layoutY="282.0" prefHeight="25.0" prefWidth="264.0" promptText="enter your city name" />
+      <Button layoutX="223.0" layoutY="337.0" mnemonicParsing="false" onAction="#addBook" text="Submit" />
+   </children>
+   <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+   
+</AnchorPane>
